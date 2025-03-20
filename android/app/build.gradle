@@ -1,0 +1,50 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    
+    // Add the Google services Gradle plugin
+    id "com.google.gms.google-services"
+}
+
+android {
+    namespace = "com.example.bite_nearby"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
+    }
+
+    kotlinOptions {
+           jvmTarget = "21"
+    }
+
+    defaultConfig {
+        applicationId = "com.bitenearbyapp.bite_nearby"
+        minSdk = 23
+        targetSdk = flutter.targetSdkVersion
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // Example: Add Firebase Analytics
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+}

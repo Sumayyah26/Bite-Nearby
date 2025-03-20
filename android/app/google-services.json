@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "773255890080",
+    "project_id": "bite-nearby-5b9a4",
+    "storage_bucket": "bite-nearby-5b9a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773255890080:android:9e243659830d022b81b5c5",
+        "android_client_info": {
+          "package_name": "com.bitenearbyapp.bite_nearby"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVRV1ZWdK7KnR0J8nc0GEiLubC5QWVE14"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
